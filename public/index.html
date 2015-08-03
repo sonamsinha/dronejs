@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="DroneApp">
+<head lang="en">
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DroneStocks</title>
+    <link href="stylesheets/homepage/home.css" rel="stylesheet">
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div id="menu">
+    <h1><a href="#"><b>DRONE</b>STOCKS</a></h1>
+    <div>
+        <ul>
+            <li><a href="introduction">INTRODUCTION</a></li>
+            <li><a href="stocks">STOCKS</a></li>
+            <li><a href="contact">CONTACT US</a></li>
+            <li><a href="blog">BLOG</a></li>
+        </ul>
+    </div>
+</div>
+<div id="cont">
+    <div class="box large left">
+        <h2><b>DRONE</b>STOCKS</h2>
+        Get the latest information for companies manufacturing drones. Browse their current
+        stock value, detailed information about their drones and a lot more.
+    </div>
+</div>
+
+<div id="fb" class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="vendor/angular.js"></script>
+<script src="vendor/angular-strap.js"></script>
+<script src="vendor/angular-strap.tpl.js"></script>
+<script src="vendor/angular-messages.js"></script>
+<script src="vendor/angular-resource.js"></script>
+<script src="vendor/angular-route.js"></script>
+<script src="vendor/angular-cookies.js"></script>
+<script src="vendor/moment.js"></script>
+</body>
+</html>
