@@ -1,0 +1,114 @@
+#modal {
+    left:50%;
+    margin:-250px 0 0 -40%;
+    opacity: 0;
+    position:absolute;
+    top:-50%;
+    visibility: hidden;
+    width:80%;
+    box-shadow:0 3px 7px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+/* Make the modal appear when targeted */
+#modal:target {
+    opacity: 1;
+    top:50%;
+    visibility: visible;
+}
+#modal .header,#modal .footer {
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 5px 5px 0 0;
+    color: #ffffff;
+    background: #000;
+}
+#modal .footer {
+    border:none;
+    border-top: 1px solid #e7e7e7;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+#modal h2 {
+    margin:0;
+}
+#modal .btn {
+    float:right;
+}
+#modal .copy,#modal .header, #modal .footer {
+    padding:15px;
+}
+
+#modal .header{
+    text-align: center;
+}
+
+.modal-content {
+    background: #f7f7f7;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 20;
+    border-radius:5px;
+}
+#modal .copy {
+    background: #000;
+    color: #ffffff;
+}
+
+#modal .overlay {
+    background-color: #000;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.contact-table{
+    width: 100%;
+}
+
+.contact-form{
+    text-align: right;
+}
+
+input[type="text"] {
+    display: block;
+    margin : 0 auto;
+}
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+
+.btn {
+    background-color: #f6f6f6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(246, 246, 246)), to(rgb(225, 225, 225)));
+    background-image: -webkit-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+    background-image: -moz-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+    background-image: -o-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+    background-image: -ms-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+    background-image: linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f6f6f6', EndColorStr='#e1e1e1');
+    border: 1px solid #ccc;
+    color:#555;
+    display:inline-block;
+    padding:5px 15px;
+    text-decoration:none;
+    text-shadow:0 2px rgba(255,255,255,.9);
+    border-radius:20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    box-shadow:0 1px rgba(0,0,0,.35);
+    -moz-box-shadow:0 1px rgba(0,0,0,.35);
+    -webkit-box-shadow:0 1px rgba(0,0,0,.35);
+}

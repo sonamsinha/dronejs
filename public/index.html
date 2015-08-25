@@ -1,55 +1,136 @@
 <!DOCTYPE html>
-<html ng-app="DroneApp">
-<head lang="en">
-    <base href="/">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DroneStocks</title>
-    <link href="stylesheets/homepage/home.css" rel="stylesheet">
+    <meta name="description" content="Get to know the latest information in the drone industry " />
+    <meta name="keywords" content="drone, drones, stocks, drone blogs, drone companies, airline, aeroplane" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/homepage/default.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/homepage/component.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/homepage/home.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/homepage/footer.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/homepage/modal.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="stylesheets/homepage/font-awesome.min.css">
+    <script src="javascripts/modernizr.custom.js"></script>
 </head>
 <body>
-<div id="fb-root"></div>
+<div class="container demo-1">
+    <div class="main clearfix">
+        <div class="column">
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button class="dl-trigger">Open Menu</button><p class="heading"><b>DRONESTOCKS</b></p>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="#">Stocks</a>
+                    </li>
+                    <li>
+                        <a href="#modal">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </div><!-- /dl-menuwrapper -->
+        </div>
+    </div>
+</div><!-- /container -->
+
+
+
+<div id="modal">
+    <div class="modal-content">
+        <div class="header">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="copy">
+            <form>
+                <div>
+                    <table align="center" class="contact-table">
+                        <tr>
+                            <td>
+                                <span class="contact-form">Name</span>
+                            </td>
+                            <td>
+                                <input type="text" name="name" value="" id="contact-name" maxlength="50"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Message</span>
+                            </td>
+                            <td>
+                                <input type="text" name="message" value="" id="contact-message" maxlength="200"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Email</span>
+                            </td>
+                            <td>
+                                <input type="text" name="email" value="" id="contact-email" maxlength="50"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Quote ($)</span>
+                            </td>
+                            <td>
+                                <input type="text" name="quote" value="" id="contact-quote" maxlength="50"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+        <div class="cf footer">
+            <a href="#" class="btn">Close</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</div>
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-right">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Blog</a>
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">FAQ</a>
+            ·
+            <a href="#modal">Contact</a>
+        </p>
+
+        <p class="footer-comp">DRONESTOCKS &copy; 2015</p>
+    </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="javascripts/jquery.dlmenu.js"></script>
 <script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    $(function() {
+        $( '#dl-menu' ).dlmenu();
+    });
 </script>
-
-
-<div id="menu">
-    <h1><a href="#"><b>DRONE</b>STOCKS</a></h1>
-    <div>
-        <ul>
-            <li><a href="introduction">INTRODUCTION</a></li>
-            <li><a href="stocks">STOCKS</a></li>
-            <li><a href="contact">CONTACT US</a></li>
-            <li><a href="blog">BLOG</a></li>
-        </ul>
-    </div>
-</div>
-<div id="cont">
-    <div class="box large left">
-        <h2><b>DRONE</b>STOCKS</h2>
-        Get the latest information for companies manufacturing drones. Browse their current
-        stock value, detailed information about their drones and a lot more.
-    </div>
-</div>
-
-<div id="fb" class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="vendor/angular.js"></script>
-<script src="vendor/angular-strap.js"></script>
-<script src="vendor/angular-strap.tpl.js"></script>
-<script src="vendor/angular-messages.js"></script>
-<script src="vendor/angular-resource.js"></script>
-<script src="vendor/angular-route.js"></script>
-<script src="vendor/angular-cookies.js"></script>
-<script src="vendor/moment.js"></script>
 </body>
 </html>
